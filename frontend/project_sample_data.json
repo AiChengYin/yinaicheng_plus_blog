@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "projectCategory": "网易云计算计费出账",
+    "content": "# 项目简介\n\n负责网易云计算平台的计费出账系统开发，主要功能包括：\n\n- 资源使用量统计与计算\n- 账单生成与导出\n- 计费策略配置与管理\n\n## 技术栈\n\n- Java Spring Boot\n- MySQL\n- Redis\n- RabbitMQ\n\n## 项目成果\n\n- 系统稳定性达到99.99%\n- 支持日处理百万级账单数据\n- 实现计费准确率达到99.9%",
+    "technologyStack": "Java, Spring Boot, MySQL, Redis, RabbitMQ"
+  },
+  {
+    "id": "2",
+    "projectCategory": "网易数帆云公共项目",
+    "content": "# 项目概述\n\n参与网易数帆云公共组件开发，主要贡献包括：\n\n- 用户认证与权限管理系统\n- 日志收集与分析平台\n- 监控告警系统\n\n## 使用技术\n\n- Go语言\n- Docker\n- Kubernetes\n- Prometheus\n\n## 项目亮点\n\n- 实现了统一认证，减少各业务线重复开发\n- 日志分析平台提升故障排查效率80%\n- 监控系统覆盖90%以上核心服务",
+    "technologyStack": "Go, Docker, Kubernetes, Prometheus"
+  },
+  {
+    "id": "3",
+    "projectCategory": "三叉戟智能集运平台",
+    "content": "# 项目背景\n\n为物流公司开发的智能集运管理平台，主要功能：\n\n- 货物追踪与状态更新\n- 运输路线优化\n- 成本分析与报表\n\n## 技术选型\n\n- Vue.js\n- Node.js\n- MongoDB\n- WebSocket\n\n## 项目价值\n\n- 运输效率提升30%\n- 成本降低15%\n- 客户满意度提升至95%",
+    "technologyStack": "Vue.js, Node.js, MongoDB, WebSocket"
+  }
+]

@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://yinaicheng_blog:xpasswordx@localhost:27017/yinaicheng_blog
+      
+logging:
+  level:
+    org.springframework.data.mongodb: DEBUG
+    com.personal.blog: DEBUG

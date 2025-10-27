@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "深入理解HashMap源码分析",
+    "content": "# HashMap源码解析\n\nHashMap是Java中最常用的数据结构之一，本文将深入分析其源码实现。\n\n## 数据结构\n\nHashMap底层采用数组+链表+红黑树的结构：\n\n1. 数组用于存储元素\n2. 链表用于解决哈希冲突\n3. 红黑树用于优化链表过长的情况\n\n## 核心方法\n\n### put方法\n```java\npublic V put(K key, V value) {\n    return putVal(hash(key), key, value, false, true);\n}\n```\n\n### get方法\n```java\npublic V get(Object key) {\n    Node<K,V> e;\n    return (e = getNode(hash(key), key)) == null ? null : e.value;\n}\n```\n\n## 扩容机制\n\n当元素数量超过阈值时，HashMap会进行扩容，扩容因子默认为0.75。",
+    "categoryLevel1": "算法与数据结构",
+    "categoryLevel2": "集合框架",
+    "createTime": "2023-05-15T10:30:00Z"
+  },
+  {
+    "id": "2",
+    "title": "MySQL索引优化实战",
+    "content": "# MySQL索引优化\n\n数据库索引是提升查询性能的关键技术，本文通过实际案例分析索引优化策略。\n\n## 索引类型\n\n1. **主键索引**：唯一且非空\n2. **唯一索引**：唯一但可为空\n3. **普通索引**：无限制\n4. **组合索引**：多个字段组合\n\n## 优化建议\n\n### 组合索引顺序\n\n遵循最左前缀原则：\n\n```sql\n-- 创建组合索引\nCREATE INDEX idx_name_age_city ON users(name, age, city);\n\n-- 有效使用索引\nSELECT * FROM users WHERE name = 'John' AND age = 25;\n\n-- 部分使用索引\nSELECT * FROM users WHERE name = 'John' AND city = 'Beijing';\n\n-- 无法使用索引\nSELECT * FROM users WHERE age = 25 AND city = 'Beijing';\n```\n\n## 性能对比\n\n通过EXPLAIN分析查询计划，优化前后性能提升300%。",
+    "categoryLevel1": "关系型数据库",
+    "categoryLevel2": "性能优化",
+    "createTime": "2023-06-20T14:45:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Netty高性能网络编程",
+    "content": "# Netty网络编程框架\n\nNetty是一个高性能的异步事件驱动的网络应用框架，广泛应用于高并发场景。\n\n## 核心组件\n\n### EventLoop\n事件循环，处理I/O操作和任务执行。\n\n### Channel\n网络连接的抽象，支持多种协议。\n\n### ByteBuf\n优化的字节缓冲区，替代传统的ByteBuffer。\n\n## 内存管理\n\nNetty采用池化内存管理，减少GC压力：\n\n```java\n// 使用池化内存分配器\nByteBufAllocator allocator = PooledByteBufAllocator.DEFAULT;\nByteBuf buffer = allocator.buffer(1024);\n```\n\n## 高性能特性\n\n1. 零拷贝技术\n2. 内存池化\n3. 灵活的线程模型\n4. 无锁化设计",
+    "categoryLevel1": "高并发网络编程",
+    "categoryLevel2": "框架应用",
+    "createTime": "2023-07-10T09:15:00Z"
+  }
+]
